@@ -13,7 +13,7 @@
 **Model Summary:**
 Granite Speech models are compact and efficient speech-language models, specifically designed for automatic speech recognition (ASR) and automatic speech translation (AST). Granite Speech models use a two-pass design, unlike integrated models that combine speech and language into a single pass. Initial calls to Granite Speech will transcribe audio files into text. To process the transcribed text using the underlying Granite language model, users must make a second call as each step must be explicitly initiated.
 
-These models were trained on a collection of public corpora comprising diverse datasets for ASR and AST as well as synthetic datasets tailored to support the speech translation task. granite-speech-3.3-2/8b models were trained by modality aligning granite-3.3-2/8b-instruct to speech on publicly available open source corpora containing audio inputs and text targets.
+These models were trained on a collection of public corpora comprising diverse datasets for ASR and AST as well as synthetic datasets tailored to support the speech translation task. granite-speech-3.3-2b/8b models were trained by modality aligning granite-3.3-2b/8b-instruct to speech on publicly available open source corpora containing audio inputs and text targets.
 
 * Compared to revision 3.3.1, revision 3.3.2 supports multilingual speech inputs in English, French, German, Spanish and Portuguese and provides additional accuracy improvements for English ASR.
 * Compared to the initial release, revision 3.3.2 is also trained on additional data and uses a deeper acoustic encoder for improved transcription accuracy.
