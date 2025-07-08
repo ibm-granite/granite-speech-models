@@ -22,17 +22,22 @@ These models were trained on a collection of public corpora comprising diverse d
 
 We evaluated Granite Speech models alongside other speech-language models in the less than 8b parameter range as well as dedicated ASR and AST systems on standard benchmarks. The evaluation spanned multiple public benchmarks, with particular emphasis on English ASR tasks while also including multilingual ASR and AST for X-En and En-X translations. 
 <br>
+<br>
 ![image/png](https://cdn-uploads.huggingface.co/production/uploads/666ec38102791b3b49f453e8/R43NGvyl2HzWKnElo5cBv.png)
+<br>
 <br>
 ![image/png](https://cdn-uploads.huggingface.co/production/uploads/666ec38102791b3b49f453e8/GXBqn5V1QPcsguSnlNqbi.png)
 <br>
+<br>
 ![image/png](https://cdn-uploads.huggingface.co/production/uploads/666ec38102791b3b49f453e8/Ham13Oq2hBuIb8gyFUR4u.png)
+<br>
 <br>
 ![image/png](https://cdn-uploads.huggingface.co/production/uploads/666ec38102791b3b49f453e8/VNNCu1Ztb1jA8mTt6bFoC.png)
 <br>
+<br>
 ![image/png](https://cdn-uploads.huggingface.co/production/uploads/666ec38102791b3b49f453e8/anLzlE_AlIw_c6R_S-dCI.png)
 <br>
-
+<br>
 **Release Date**: June 19, 2025 
 
 **License:** [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
@@ -371,6 +376,7 @@ To enhance safety, we recommend using granite-speech-3.3-8b alongside Granite Gu
 
 **Resources**
 - 📄 Read the full technical report: https://arxiv.org/abs/2505.08699 (covers initial release only)
+- 🔧 Finetune the model on custom data: https://github.com/ibm-granite/granite-speech-models/blob/main/notebooks/fine_tuning_granite_speech.ipynb
 - ⭐️ Learn about the latest updates with Granite: https://www.ibm.com/granite
 - 🚀 Get started with tutorials, best practices, and prompt engineering advice: https://www.ibm.com/granite/docs/
 - 💡 Learn about the latest Granite learning resources: https://ibm.biz/granite-learning-resources
