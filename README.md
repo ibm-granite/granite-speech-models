@@ -1,24 +1,21 @@
----
-license: apache-2.0
-language:
-- multilingual
-base_model:
-- ibm-granite/granite-3.3-8b-instruct
-library_name: transformers
----
-# Granite-speech-3.3-8b (revision 3.3.2)
+<p align="center">
+  :books: <a href="https://arxiv.org/abs/2505.08699">Tech Report</a>&nbsp | :hugs: <a href="https://huggingface.co/collections/ibm-granite/granite-speech-67e45da088d5092ff6b901c7">HuggingFace Collection</a>&nbsp | 
+  :trophy: <a href="https://huggingface.co/spaces/hf-audio/open_asr_leaderboard">OpenASR leaderboard</a>&nbsp
+<br>
+
+# Granite Speech Models 
 
 **Model Summary:**
-Granite-speech-3.3-8b is a compact and efficient speech-language model, specifically designed for automatic speech recognition (ASR) and automatic speech translation (AST). Granite-speech-3.3-8b uses a two-pass design, unlike integrated models that combine speech and language into a single pass. Initial calls to granite-speech-3.3-8b will transcribe audio files into text. To process the transcribed text using the underlying Granite language model, users must make a second call as each step must be explicitly initiated.
+Granite Speech models are compact and efficient speech-language models, specifically designed for automatic speech recognition (ASR) and automatic speech translation (AST). Granite Speech models use a two-pass design, unlike integrated models that combine speech and language into a single pass. Initial calls to Granite Speech will transcribe audio files into text. To process the transcribed text using the underlying Granite language model, users must make a second call as each step must be explicitly initiated.
 
-The model was trained on a collection of public corpora comprising diverse datasets for ASR and AST as well as synthetic datasets tailored to support the speech translation task. Granite-speech-3.3-8b was trained by modality aligning granite-3.3-8b-instruct (https://huggingface.co/ibm-granite/granite-3.3-8b-instruct) to speech on publicly available open source corpora containing audio inputs and text targets.
+These models were trained on a collection of public corpora comprising diverse datasets for ASR and AST as well as synthetic datasets tailored to support the speech translation task. granite-speech-3.3-2/8b models were trained by modality aligning granite-3.3-2/8b-instruct to speech on publicly available open source corpora containing audio inputs and text targets.
 
 * Compared to revision 3.3.1, revision 3.3.2 supports multilingual speech inputs in English, French, German, Spanish and Portuguese and provides additional accuracy improvements for English ASR.
 * Compared to the initial release, revision 3.3.2 is also trained on additional data and uses a deeper acoustic encoder for improved transcription accuracy.
 
 **Evaluations:**
 
-We evaluated granite-speech-3.3-8b revision 3.3.2 alongside other speech-language models in the less than 8b parameter range as well as dedicated ASR and AST systems on standard benchmarks. The evaluation spanned multiple public benchmarks, with particular emphasis on English ASR tasks while also including multilingual ASR and AST for X-En and En-X translations. 
+We evaluated Granite Speech models alongside other speech-language models in the less than 8b parameter range as well as dedicated ASR and AST systems on standard benchmarks. The evaluation spanned multiple public benchmarks, with particular emphasis on English ASR tasks while also including multilingual ASR and AST for X-En and En-X translations. 
 <br>
 ![image/png](https://cdn-uploads.huggingface.co/production/uploads/666ec38102791b3b49f453e8/R43NGvyl2HzWKnElo5cBv.png)
 <br>
@@ -39,11 +36,11 @@ We evaluated granite-speech-3.3-8b revision 3.3.2 alongside other speech-languag
 English, French, German, Spanish, Portuguese
 
 **Intended Use:** 
-The model is intended to be used in enterprise applications that involve processing of speech inputs. In particular, the model is well-suited for English, French, German, Spanish and Portuguese speech-to-text and speech translations to and from English for the same languages plus English-to-Japanese and English-to-Mandarin. The model can also be used for tasks that involve text-only input since it calls the underlying granite-3.3-8b-instruct when the user specifies a prompt that does not contain audio.
+The model is intended to be used in enterprise applications that involve processing of speech inputs. In particular, the model is well-suited for English, French, German, Spanish and Portuguese speech-to-text and speech translations to and from English for the same languages plus English-to-Japanese and English-to-Mandarin. The model can also be used for tasks that involve text-only input since it calls the underlying Granite model when the user specifies a prompt that does not contain audio.
 
 ## Generation:
 
-Granite Speech model is supported natively in `transformers` from the `main` branch. Below is a simple example of how to use the `granite-speech-3.3-8b` revision 3.3.2 model.
+Granite Speech models are supported natively in `transformers` from the `main` branch. Below is a simple example of how to use the `granite-speech-3.3-8b` revision 3.3.2 model.
 
 ### Usage with `transformers`
 
