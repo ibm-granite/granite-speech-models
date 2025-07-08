@@ -1,4 +1,9 @@
 <p align="center">
+  <img src="figures/granite_speech_repo_headbar.png" />
+</p>
+
+
+<p align="center">
   :books: <a href="https://arxiv.org/abs/2505.08699">Tech Report</a>&nbsp | :hugs: <a href="https://huggingface.co/collections/ibm-granite/granite-speech-67e45da088d5092ff6b901c7">HuggingFace Collection</a>&nbsp | 
   :trophy: <a href="https://huggingface.co/spaces/hf-audio/open_asr_leaderboard">OpenASR leaderboard</a>&nbsp
 <br>
