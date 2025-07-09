@@ -5,7 +5,8 @@
 
 <p align="center">
   :books: <a href="https://arxiv.org/abs/2505.08699">Tech Report</a>&nbsp | :hugs: <a href="https://huggingface.co/collections/ibm-granite/granite-speech-67e45da088d5092ff6b901c7">HuggingFace Collection</a>&nbsp | 
-  :trophy: <a href="https://huggingface.co/spaces/hf-audio/open_asr_leaderboard">OpenASR leaderboard</a>&nbsp
+  :trophy: <a href="https://huggingface.co/spaces/hf-audio/open_asr_leaderboard">OpenASR leaderboard</a>&nbsp | 
+  :wrench: <a href="https://colab.research.google.com/github/ibm-granite/granite-speech-models/blob/main/notebooks/fine_tuning_granite_speech.ipynb">Finetuning Example</a>&nbsp
 <br>
 
 # Granite Speech Models 
@@ -376,7 +377,7 @@ To enhance safety, we recommend using granite-speech-3.3-8b alongside Granite Gu
 
 **Resources**
 - 📄 Read the full technical report: https://arxiv.org/abs/2505.08699 (covers initial release only)
-- 🔧 Finetune the model on custom data: https://github.com/ibm-granite/granite-speech-models/blob/main/notebooks/fine_tuning_granite_speech.ipynb
+- 🔧 Finetune the model on custom data: https://colab.research.google.com/github/ibm-granite/granite-speech-models/blob/main/notebooks/fine_tuning_granite_speech.ipynb
 - ⭐️ Learn about the latest updates with Granite: https://www.ibm.com/granite
 - 🚀 Get started with tutorials, best practices, and prompt engineering advice: https://www.ibm.com/granite/docs/
 - 💡 Learn about the latest Granite learning resources: https://ibm.biz/granite-learning-resources
